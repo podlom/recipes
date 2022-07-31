@@ -1,0 +1,553 @@
+/*
+Theme Name: Canape
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+blockquote {
+	border-right: 4px solid #e9b330;
+	border-left: none;
+	padding-right: 1em;
+	padding-left: 0;
+}
+
+li > ul,
+li > ol {
+	margin-right: 0;
+	padding: 0 24px 0 0;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	text-align: left;
+}
+
+.main-navigation ul ul {
+	margin: 0 2.15em 1em 0;
+}
+
+.menu-toggle:after {
+	content: '\f419';
+	font-family: 'Genericons';
+	margin-left: 8px;
+	margin-right: 0;
+}
+
+.menu-toggle:before {
+	display: none;
+}
+
+/* Content Navigation */
+[class*='navigation'] .nav-previous {
+	float: left;
+	width: 48%;
+}
+
+[class*='navigation'] .nav-next {
+	float: right;
+	text-align: right;
+	width: 48%;
+}
+
+[class*='navigation'] .nav-previous:empty:before,
+[class*='navigation'] .nav-next:empty:after {
+	display: none;
+}
+
+[class*='navigation'] .nav-previous:after {
+	color: #aaa;
+	content: '\2192';
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+[class*='navigation'] .nav-next:before {
+	color: #aaa;
+	content: '\2190';
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+[class*='navigation'] .nav-previous:before,
+[class*='navigation'] .nav-next:after {
+	display: none;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	text-align: left;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+#secondary:not(.front-widget-area) .widget {
+	text-align: right;
+}
+
+.widget li > ul,
+.widget li > ol {
+	margin-right: 24px;
+	margin-left: 0;
+}
+
+/* Footer Widgets */
+.pre-footer:after {
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.footer-widget-area .widget {
+	text-align: right;
+}
+
+.footer-widget-area .widget-title {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+.archive:not(.post-type-archive-jetpack-testimonial, .tax-nova_menu) .hentry,
+.search .hentry,
+.blog .hentry,
+.single .hentry {
+	text-align: right;
+}
+
+
+/*--------------------------------------------------------------
+## Posts and Pages
+--------------------------------------------------------------*/
+.archive .page-title,
+.search .page-title {
+	text-align: right;
+}
+
+.entry-meta {
+	text-align: right;
+}
+
+.entry-meta span {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+footer.entry-meta {
+	text-align: right;
+}
+
+footer.entry-meta span {
+	margin-left: 16px;
+	margin-right: 0;
+}
+
+.categories-links,
+.tags-links {
+	margin-left: 1em;
+	margin-right: auto;
+}
+
+/* Front page content with featured image */
+.hero-container-inner .entry-content {
+	text-align: right;
+}
+
+.cycle-pager span {
+	margin-left: 6px;
+	margin-right: auto;
+}
+
+/* 404 Page / No search result */
+.error404 .widget-title {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+## Post formats
+--------------------------------------------------------------*/
+
+.format-quote blockquote:before {
+	content: '\201D';
+	right: -6px;
+	position: absolute;
+	top: -5px;
+}
+
+.format-quote blockquote {
+	padding-right: 1.75em;
+	padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comments-area {
+	text-align: right;
+}
+
+.page .comments-area {
+	margin-right: 0;
+}
+
+
+.children .comment {
+	border-right: 3px solid #ece8e0;
+	border-left: none;
+	padding-right: 24px;
+	padding-left: auto;
+}
+
+.comment-author .avatar {
+	float: right;
+	margin-left: 12px;
+	margin-right: 0;
+}
+
+.comment-meta .fn {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.comment-tools {
+	float: left;
+}
+
+.comment-reply-link {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.comment-respond {
+	padding: 25px 0 20px 20px;
+}
+
+.comment-content {
+	margin-right: 70px;
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+## Testimonials
+--------------------------------------------------------------*/
+
+/* Testimonials Archives Page */
+.archive .testimonials .without-featured-image > .entry-header {
+	margin-right: 0;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width:768px) {
+	.site-branding {
+		padding-left: 7px;
+		padding-right: 0;
+	}
+
+	.main-navigation {
+		text-align: right;
+	}
+
+	.entry-meta span {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.archive:not(.post-type-archive-jetpack-testimonial, .tax-nova_menu) .hentry,
+	.search .hentry,
+	.blog .hentry,
+	.single .hentry {
+		text-align: right;
+	}
+
+	.blog .entry-header,
+	.single-post .entry-header,
+	.search .entry-header,
+	.archive:not(.post-type-archive) .entry-header {
+		margin-right: 146px;
+		margin-left: 0;
+	}
+
+	.entry-body {
+		padding: 0 146px 0 0;
+	}
+
+	.entry-meta {
+		right: 0;
+		text-align: left;
+	}
+
+	.entry-meta span {
+		margin-right: 0;
+	}
+
+	.post-navigation,
+	.paging-navigation,
+	.comments-area {
+		margin-right: 146px;
+		margin-left: 0;
+	}
+
+	/* Navigation */
+	.main-navigation ul li {
+		padding: .875em 1em .875em 0;
+	}
+
+	.main-navigation ul li:first-child {
+		padding-left: 0;
+	}
+
+	.nav-menu > li > a:before {
+		margin-left: 1em;
+		margin-right: 0;
+	}
+
+	.main-navigation ul ul {
+		left: 0;
+		position: absolute;
+	}
+
+	.nav-menu > li:first-child > a:before {
+		margin-left: 0;
+	}
+
+	.main-navigation li a:not(:last-child):after {
+		content: '\f431';
+		font-family: Genericons;
+		font-size: 13px;
+		margin: 0 0 0 5px;
+	}
+
+	.main-navigation ul ul li a:not(:last-child):after {
+		float: right;
+		margin: 2px 0 0 5px;
+		transform: rotate(-90deg);
+	}
+
+	.main-navigation ul ul li {
+		text-align: left;
+	}
+
+	.main-navigation ul ul ul {
+		left: 100%;
+		opacity: 0;
+		top: -3px;
+		transform: translate3d(20px, 0, 0);
+		transition: visibility 0s linear .2s, opacity .2s linear, transform .2s linear;
+		visibility: hidden;
+		width: 160px;
+		-webkit-transform: translate3d(20px, 0, 0);
+	}
+
+	.menu-items .nova_menu_item ,
+	.archive.tax-nova_menu .menu-items .nova_menu_item {
+		float: left;
+		margin-right: 6%;
+		width: 47%;
+	}
+
+	.menu-items .nova_menu_item:nth-child(odd),
+	.archive.tax-nova_menu .menu-items .nova_menu_item:nth-child(odd) {
+		margin-right: 0;
+	}
+
+	.menu-items .nova_menu_item:nth-child(3n+1):after,
+	.archive.tax-nova_menu .menu-items .nova_menu_item:nth-child(3n+1):after {
+		clear: both;
+	}
+
+	.menu-items .nova_menu_item:nth-last-child(1):nth-child(even) {
+		clear: both;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.menu-items:last-of-type .nova_menu_item:nth-last-child(2):nth-child(even),
+	.menu-items:last-of-type .nova_menu_item:nth-last-child(1) {
+		border-bottom: none;
+	}
+
+	.front-testimonials .inner {
+		padding: 0;
+		width: 670px;
+	}
+
+	.front-widget-area .widget:last-child{
+		margin-bottom: 0;
+	}
+
+	/* Menu Page Template */
+	.menu-group-header {
+		margin: 1.75em 0;
+	}
+	.page-template-menu-page .menu-group-header {
+		margin: 3em 0;
+	}
+
+	/* Front Page & Footer Widget Areas */
+	.front-widget-area .widget-area:nth-child(1):nth-last-child(2),
+	.front-widget-area .widget-area:nth-child(2):nth-last-child(1),
+	.footer-widget-area .widget-area:nth-child(1):nth-last-child(2),
+	.footer-widget-area .widget-area:nth-child(2):nth-last-child(1) {
+		margin-right: 6%;
+		width: 47%;
+	}
+
+	.front-widget-area .widget-area:nth-child(1):nth-last-child(2):last-of-type,
+	.front-widget-area .widget-area:nth-child(2):nth-last-child(1):last-of-type,
+	.footer-widget-area .widget-area:nth-child(1):nth-last-child(2):last-of-type,
+	.footer-widget-area .widget-area:nth-child(2):nth-last-child(1):last-of-type {
+		margin-right: 0;
+	}
+
+	.front-widget-area .widget-area:nth-child(1):nth-last-child(3),
+	.front-widget-area .widget-area:nth-child(2):nth-last-child(2),
+	.front-widget-area .widget-area:nth-child(3):nth-last-child(1) {
+		margin-right: 2%;
+	}
+
+	.front-widget-area .widget-area:nth-child(1):nth-last-child(3):last-of-type,
+	.front-widget-area .widget-area:nth-child(2):nth-last-child(2):last-of-type,
+	.front-widget-area .widget-area:nth-child(3):nth-last-child(1):last-of-type {
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1135px) {
+	.front-featured-menu-items .item {
+		margin-left: -3px;
+	}
+
+	.front-featured-menu-items .grid-row .item:nth-child(1):nth-last-child(3),
+	.front-featured-menu-items .grid-row .item:nth-child(2):nth-last-child(2),
+	.front-featured-menu-items .grid-row .item:nth-child(3):nth-last-child(1),
+	.front-featured-menu-items .grid-row .item:nth-child(1):nth-last-child(3),
+	.front-featured-menu-items .grid-row .item:nth-child(2):nth-last-child(2),
+	.front-featured-menu-items .grid-row .item:nth-child(3):nth-last-child(1),
+	.front-widget-area .widget-area:nth-child(1):nth-last-child(3),
+	.front-widget-area .widget-area:nth-child(2):nth-last-child(2),
+	.front-widget-area .widget-area:nth-child(3):nth-last-child(1),
+	.footer-widget-area .widget-area:nth-child(1):nth-last-child(3),
+	.footer-widget-area .widget-area:nth-child(2):nth-last-child(2),
+	.footer-widget-area .widget-area:nth-child(3):nth-last-child(1) {
+		margin-right: 2%;
+	}
+
+	.front-featured-menu-items .grid-row .item:nth-child(1):nth-last-child(3):last-of-type,
+	.front-featured-menu-items .grid-row .item:nth-child(2):nth-last-child(2):last-of-type,
+	.front-featured-menu-items .grid-row .item:nth-child(3):nth-last-child(1):last-of-type,
+	.front-featured-menu-items .grid-row .item:nth-child(1):nth-last-child(3):last-of-type,
+	.front-featured-menu-items .grid-row .item:nth-child(2):nth-last-child(2):last-of-type {
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (min-width:850px) {
+	/* Footer Widget Area */
+	.pre-footer .inner {
+		text-align: right;
+	}
+
+	.footer-branding {
+		margin-left: 2%;
+		margin-right: 0%;
+	}
+
+}
+
+@media screen and (min-width:1024px) {
+	.main-navigation ul {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width:1136px) {
+	.archive .site-content,
+	.search .site-content,
+	.blog .site-content,
+	.single .site-content {
+		text-align: right;
+	}
+
+	/* Content */
+	.archive.tax-nova_menu .entry-header {
+		margin-right: 0;
+	}
+
+	.single-jetpack-testimonial .post-navigation {
+		margin-right: 0;
+	}
+
+	.content-wrapper:not(.full-width) .content-area {
+		float: left;
+		margin-right: 72px;
+	}
+
+	.front-featured-menu-items .grid-row .item {
+		margin-left: 1.2em;
+		margin-right: auto;
+	}
+
+	.front-featured-menu-items .grid-row .item:last-child {
+		margin-left: 0;
+	}
+
+}
+
+@media screen and (min-width:1240px) {
+
+	.content-area {
+		float: right;
+	}
+
+	.entry-meta span {
+		margin-right: 0;
+	}
+
+	/* Sidebar */
+	.sidebar-widget-area {
+		float: left;
+	}
+
+}

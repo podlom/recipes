@@ -1,0 +1,351 @@
+# Translation of WordPress.com - Themes - Canape in Romanian
+# This file is distributed under the same license as the WordPress.com - Themes - Canape package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-23 06:26:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ro\n"
+"Project-Id-Version: WordPress.com - Themes - Canape\n"
+
+#: inc/wpcom-colors.php:100
+msgid "Links"
+msgstr "Legături"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:75
+msgid "Tagged"
+msgstr "Etichetat"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/canape/style.css
+msgid "Canapé is a bold and refined theme, designed for restaurants and food-related businesses seeking a classic, elegant look. The carefully crafted Menu Template takes care of showcasing your food and drink menu, while integration with the Open Table widget makes it easy for your guests to make online reservations."
+msgstr "Canapé este o temă îndrăzneață și rafinată, proiectată pentru restaurante și afaceri din domeniul alimentar care caută un aspect clasic, elegant. Șablonul de meniu lucrat cu multă atenție are grijă de a prezenta meniul de alimente și băuturi, în timp ce integrarea cu piesa Deschide masa îi ajută pe clienții tăi să facă rezervări online."
+
+#: inc/customizer.php:104 inc/customizer.php:133 inc/customizer.php:162
+msgid "This list is populated with <a href=\"%1$s\">Food Menu Sections</a>."
+msgstr "Această listă este populată cu <a href=\"%1$s\">secțiuni meniu de mâncare</a>."
+
+#: inc/customizer.php:28
+msgid "Footer"
+msgstr "Subsol"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/canape/page-templates/sidebar-page.php
+msgid "Page with sidebar"
+msgstr "Pagină cu bară laterală"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/canape/page-templates/menu-page.php
+msgid "Menu Template"
+msgstr "Șablon meniu"
+
+#. translators: %s: Name of current post.
+#: template-parts/content-single.php:30 template-parts/content.php:33
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Citește în continuare %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-page.php:21 template-parts/content-single.php:37
+#: template-parts/content.php:40
+msgid "Pages:"
+msgstr "Pagini:"
+
+#: template-parts/content-none.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Se pare că nu putem găsi ceea ce cauți tu. Poate o căutare ar fi de ajutor."
+
+#: template-parts/content-none.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Regret, dar nimic nu se potrivește termenilor căutării tale. Te rog încearcă din nou cu cuvinte cheie diferite."
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gata să publici primul tău articol? <a href=\"%1$s\">Poți începe aici</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nimic găsit"
+
+#: template-parts/content-front-testimonial.php:61
+msgid "Ready to publish your first testimonial? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gata să-ți publici primul testimonial? <a href=\"%1$s\">Începe de aici</a>."
+
+#: template-parts/content-front-testimonial.php:60
+msgid "This section will display your latest testimonials. It can can be disabled via the Customizer."
+msgstr "Această secțiune va afișa ultimele tale testimoniale. Poate fi dezactivată din personalizator."
+
+#: template-parts/content-front-testimonial.php:57
+msgid "No Testimonials Found"
+msgstr "Niciun testimonial găsit"
+
+#: taxonomy-nova_menu.php:36
+msgid "View all post filed under %s"
+msgstr "Vezi toate articolele din categoria %s"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Rezultatele căutării pentru: %s"
+
+#: inc/wp-open-table/wp-open-table.php:98
+msgid "Paste your EMBED code from <a href=\"%s\">Open Table Reservations</a> here:"
+msgstr "Plasează-ți codul de ÎNGLOBARE de la <a href=\"%s\">Open Table Reservations</a> aici:"
+
+#: inc/wp-open-table/wp-open-table.php:91
+msgid "My Open Table Widget"
+msgstr "Piesa mea Deschide masa"
+
+#: inc/wp-open-table/wp-open-table.php:85
+msgid "Title:"
+msgstr "Titlu:"
+
+#: inc/wp-open-table/wp-open-table.php:25
+msgid "Open Table Widget for WordPress"
+msgstr "Piesă Deschide masa pentru WordPress"
+
+#: inc/wp-open-table/wp-open-table.php:23
+msgid "Open Table Widget"
+msgstr "Piesă Deschide masa"
+
+#: inc/template-tags.php:161
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariul tău așteptă moderarea."
+
+#: inc/template-tags.php:155
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s la %2$s"
+
+#: inc/template-tags.php:141
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:71
+msgid "Posted in %1$s"
+msgstr "Publicat în %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:69 inc/template-tags.php:75
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:52
+msgid "% Comments"
+msgstr "% comentarii"
+
+#: inc/template-tags.php:52
+msgid "1 Comment"
+msgstr "Un comentariu"
+
+#: inc/template-tags.php:52
+msgid "Leave a comment"
+msgstr "Lasă un comentariu"
+
+#: inc/template-tags.php:41
+msgid "Featured"
+msgstr "Reprezentativ"
+
+#: inc/customizer.php:202
+msgid "None"
+msgstr "Nimic"
+
+#: inc/customizer.php:176
+msgid "Featured Image Three"
+msgstr "Imagine reprezentativă trei"
+
+#: inc/customizer.php:161
+msgid "Front Page: Featured Menu Section Three"
+msgstr "Pagina din față: secțiune meniu reprezentativ trei"
+
+#: inc/customizer.php:147
+msgid "Featured Image Two"
+msgstr "Imagine reprezentativă doi"
+
+#: inc/customizer.php:132
+msgid "Front Page: Featured Menu Section Two"
+msgstr "Pagina din față: secțiune meniu reprezentativ doi"
+
+#: inc/customizer.php:119 inc/customizer.php:148 inc/customizer.php:177
+msgid "Recommended image width is 345px."
+msgstr "Lățimea recomandată a imaginii este de 345 de px."
+
+#: inc/customizer.php:118
+msgid "Featured Image One"
+msgstr "Imagine reprezentativă unu"
+
+#: inc/customizer.php:103
+msgid "Front Page: Featured Menu Section One"
+msgstr "Pagina din față: secțiune meniu reprezentativ unu"
+
+#: inc/customizer.php:91
+msgid "Show Testimonials Section on the Front Page"
+msgstr "Arată secțiune testimoniale pe pagina din față"
+
+#: inc/customizer.php:80
+msgid "Front Page"
+msgstr "Pagina principală"
+
+#: inc/customizer.php:75
+msgid "100%"
+msgstr "100%"
+
+#: inc/customizer.php:74
+msgid "80%"
+msgstr "80%"
+
+#: inc/customizer.php:73
+msgid "60%"
+msgstr "60%"
+
+#: inc/customizer.php:72
+msgid "40%"
+msgstr "40%"
+
+#: inc/customizer.php:71
+msgid "20%"
+msgstr "20%"
+
+#: inc/customizer.php:65
+msgid "Footer Widget Area Background Opacity"
+msgstr "Opacitate fundal zonă asamblabilă subsol"
+
+#: inc/customizer.php:53
+msgid "Footer Widget Area Background Image"
+msgstr "Imagine fundal zonă asamblabilă subsol"
+
+#: inc/customizer.php:39
+msgid "Show site title and description in the footer."
+msgstr "Arată titlu și descriere sit în subsol."
+
+#: inc/customizer.php:24
+msgid "Canape Theme Options"
+msgstr "Opțiuni temă Canape"
+
+#: inc/customizer.php:23
+msgid "Theme Options"
+msgstr "Opțiuni temă"
+
+#: header.php:46
+msgid "Menu"
+msgstr "Meniu"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Sari la conținut"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Oswald, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:176
+msgctxt "Montserrat font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Droid Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:171
+msgctxt "Noticia Text font: on or off"
+msgid "on"
+msgstr "on"
+
+#. translators: If there are characters in your language that are not supported
+#. * by Source Sans Pro, translate this to 'off'. Do not translate into your
+#. own language.
+#: functions.php:166
+msgctxt "Playfair Display font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:147
+msgid "Third Front Page Widget Area"
+msgstr "A treia zonă asamblabilă din pagina din față"
+
+#: functions.php:139
+msgid "Second Front Page Widget Area"
+msgstr "A doua zonă asamblabilă din pagina din față"
+
+#: functions.php:131
+msgid "First Front Page Widget Area"
+msgstr "Prima zonă asamblabilă din pagina din față"
+
+#: functions.php:123
+msgid "Second Footer Widget Area"
+msgstr "A doua zonă asamblabilă din subsol"
+
+#: functions.php:115
+msgid "First Footer Widget Area"
+msgstr "Prima zonă asamblabilă din subsol"
+
+#: functions.php:107
+msgid "Main Sidebar"
+msgstr "Bară laterală principală"
+
+#: functions.php:55
+msgid "Social Menu"
+msgstr "Meniu socializare"
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr "Meniu principal"
+
+#: front-page.php:44 inc/template-tags.php:57 inc/template-tags.php:141
+#: inc/template-tags.php:165 template-parts/content-page.php:28
+#: template-parts/content-testimonial.php:16
+msgid "Edit"
+msgstr "Editare"
+
+#: footer.php:22
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s de %2$s."
+
+#: footer.php:20
+msgid "Proudly powered by %s"
+msgstr "Propulsat cu mândrie de %s"
+
+#: footer.php:20
+msgid "https://wordpress.org/"
+msgstr "https://ro.wordpress.org/"
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Comentarii mai noi"
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Comentarii mai vechi"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Navigare în comentarii"
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un gând despre &#8222;%2$s&#8221;"
+msgstr[1] "%1$s gânduri despre &#8222;%2$s&#8221;"
+msgstr[2] "%1$s de gânduri despre &#8222;%2$s&#8221;"
+
+#: archive-jetpack-testimonial.php:31
+#: template-parts/content-front-testimonial.php:28
+msgid "Testimonials"
+msgstr "Testimoniale"
+
+#: 404.php:37
+msgid "Most Used Categories"
+msgstr "Cele mai folosite categorii"
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Se pare că nu a fost găsit nimic la această locație. Poate încerci una din legăturile de mai jos sau o căutare?"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hopa! Pagina aceea nu a fost găsită."
