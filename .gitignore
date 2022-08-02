@@ -24,3 +24,6 @@ node_modules/
 
 # ignore phpStorm IDE settings folder
 .idea/*
+
+# ignore wp-config.php file
+wp-config.php
